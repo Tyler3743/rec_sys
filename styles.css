@@ -1,0 +1,158 @@
+.main {
+    background-color: #0f1419;
+    color: white;
+}
+.header-container {
+        background-color: #1a1f2e;
+        padding: 1rem 0;
+        border-bottom: 1px solid #2d3748;
+    }
+
+    /* Logo styling */
+    .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Navigation links */
+    .nav-link {
+        color: #a0aec0;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+        transition: all 0.2s;
+    }
+
+    .nav-link:hover {
+        color: white;
+        background-color: #2d3748;
+    }
+
+    .nav-link.active {
+        color: white;
+        border-bottom: 2px solid #3182ce;
+    }
+
+    /* Search bar */
+    .search-container {
+        background-color: #2d3748;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        border: 1px solid #4a5568;
+    }
+
+    /* Buttons */
+    .stButton > button {
+        background-color: #3182ce;
+        color: white;
+        border: none;
+        border-radius: 0.375rem;
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+        transition: all 0.2s;
+    }
+
+    .stButton > button:hover {
+        background-color: #2c5aa0;
+        transform: translateY(-1px);
+    }
+
+    .stButton > button.secondary {
+        background-color: transparent;
+        color: white;
+        border: 1px solid #4a5568;
+    }
+
+    .stButton > button.secondary:hover {
+        background-color: #2d3748;
+    }
+
+    /* Movie title */
+    .movie-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Movie info cards */
+    .info-card {
+        background-color: #1a1f2e;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #2d3748;
+        margin: 0.5rem 0;
+    }
+
+    /* Action buttons */
+    .action-btn {
+        background: linear-gradient(135deg, #3182ce 0%, #2c5aa0 100%);
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s;
+    }
+
+    .action-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+    }
+
+    /* Interactive elements */
+    .interactive-btn {
+        background-color: transparent;
+        color: #a0aec0;
+        border: 1px solid #4a5568;
+        border-radius: 0.375rem;
+        padding: 0.5rem;
+        transition: all 0.2s;
+    }
+
+    .interactive-btn:hover {
+        color: white;
+        border-color: #3182ce;
+        background-color: #2d3748;
+    }
+
+    /* Social buttons */
+    .social-btn {
+        background-color: #2d3748;
+        color: #a0aec0;
+        border: 1px solid #4a5568;
+        border-radius: 0.375rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .social-btn:hover {
+        background-color: #4a5568;
+        color: white;
+    }
+
+    /* Hide Streamlit elements */
+    .stDeployButton {display: none;}
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #1a1f2e;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #4a5568;
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #2d3748;
+    }

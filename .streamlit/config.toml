@@ -1,0 +1,20 @@
+[global]
+developmentMode = false
+
+[server]
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 200
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#3182ce"
+backgroundColor = "#0f1419"
+secondaryBackgroundColor = "#1a1f2e"
+textColor = "#ffffff"
+
+[logger]
+level = "error"
+
