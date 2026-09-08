@@ -81,3 +81,4 @@ streamlit run frontend.py
 - Thông tin phim sẽ được hiển thị ngay cả khi không lấy được từ TMDB API
 - Không còn lỗi khi `tmdbId` không hợp lệ hoặc không tồn tại
 - Fallback gracefully về dữ liệu local khi cần thiết
+
