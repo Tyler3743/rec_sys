@@ -3,11 +3,6 @@ import requests
 import pandas as pd
 import warnings
 
-with open("styles.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-warnings.filterwarnings('ignore')
-
 
 TMDB_API_KEY = "37aa7e398fc505cdf4169bded99efe8c"
 TMDB_BASE_URL = "https://api.themoviedb.org/3"
@@ -25,7 +20,10 @@ st.set_page_config(
         'About': None
     }
 )
+with open("styles.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+warnings.filterwarnings('ignore')
 
 if 'script_run_context' not in st.session_state:
     st.session_state.script_run_context = True
@@ -136,7 +134,7 @@ def get_recommendations_from_api(user_id, top_n, method='content_based'):
 
 
 def get_similar_movies_from_api(movie_id, top_n=10):
-    """Lấy phim tương tự từ FastAPI backend (chỉ từ content-based API)"""
+    """Lấy phim tương tự từ FastAPI backend"""
     try:
         response = requests.get(f"http://localhost:8000/similar_movies/{movie_id}?top_n={top_n}")
 
@@ -149,7 +147,7 @@ def get_similar_movies_from_api(movie_id, top_n=10):
             st.error(f"Lỗi API: {response.status_code}")
             return None
     except requests.exceptions.ConnectionError:
-        st.error("Không thể kết nối đến FastAPI server. Hãy chạy: uvicorn main:app --reload")
+        st.error("Không thể kết nối đến FastAPI server. run uvicorn main:app --reload để chạy backend main.py")
         return None
     except Exception as e:
         st.error(f"Lỗi: {str(e)}")
